@@ -82,7 +82,7 @@ while finalFlowCost > flowCost:
     centroids = [findMean(clusters[i]) for i in range(K)]
     flowCost, flowDict = nx.network_simplex(G)
 
-
+print(finalFlowCost)
 print(centroids)
 for i in range(K):
     print('Cluster' + str(i + 1) + ':')
@@ -93,7 +93,7 @@ for i in range(K):
         else:
             flag = True
             
-        print(Data.index(j) , end = "")
+        print(Data.index(j) , end = ", ")
         
     print()
     
