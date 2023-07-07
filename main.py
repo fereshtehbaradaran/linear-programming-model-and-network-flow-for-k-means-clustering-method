@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # import networkx as nx
 from minizinc import Instance, Model, Solver
 
@@ -22,7 +20,3 @@ print(solns)
 
 print(len(solns))
 print(solns.status)
-=======
-import networkx as nx
-import minizinc
->>>>>>> 4400c0ea3fb7085f6cbfa69dd8279aed9678727d
